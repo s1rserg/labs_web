@@ -1,0 +1,130 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.first {
+  width: 100%;
+  min-height: 25vh;
+  background-color: lightblue;
+  display: grid;
+  grid-template-columns: 11fr 4fr;
+  border-bottom: 1px solid;
+}
+
+.first__text {
+  padding: 1%;
+  margin: auto;
+}
+
+.first__header {
+  padding: 1%;
+  margin: auto 0;
+  width: 90%;
+}
+
+.first__header__text {
+  text-align: center;
+  background-color: white;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.wrapper_2_3_4_5_6 {
+  width: 100%;
+  min-height: 50vh;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.fourth {
+  background-color: lightcoral;
+  padding: 1%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-left: 1px solid;
+}
+
+.wrapper_2_3_5_6 {
+  width: 100%;
+  min-height: 50vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.wrapper_2_5 {
+  width: 100%;
+  min-height: 50vh;
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+}
+
+.second {
+  background-color: lightgreen;
+  padding: 1%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid;
+}
+
+.fifth {
+  background-color: lightcoral;
+  padding: 1%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper_3_6 {
+  width: 100%;
+  min-height: 50vh;
+  display: grid;
+  grid-template-rows: 4fr 1fr;
+  border-left: 1px solid;
+}
+
+.third {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sixth {
+  background-color: lightgreen;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid;
+}
+
+.seventh {
+  width: 100%;
+  min-height: 25vh;
+  background-color: lightblue;
+  display: grid;
+  grid-template-columns: 11fr 4fr;
+  border-top: 1px solid;
+}
+
+.seventh__text {
+  padding: 1%;
+  margin: auto;
+}
+
+.seventh__header {
+  margin: auto 0;
+  width: 90%;
+}
+
+.seventh__header__text {
+  background-color: white;
+  border-style: solid;
+  border-width: 1px;
+}
