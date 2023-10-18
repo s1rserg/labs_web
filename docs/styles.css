@@ -119,8 +119,24 @@ div {
   margin: auto 0;
 }
 
-@media screen and (max-width: 380px) {
-  body {
-    font-size: 75%;
+@media screen and (max-width: 420px) {
+  .wrapper_2_3_4_5_6 {
+    flex-direction: column;
+  }
+  .wrapper_3_6 {
+    border-left: 0;
+  }
+  .third {
+    border-top: solid 1px;
+  }
+  .fourth {
+    border-right: 0;
+    border-left: 0;
+  }
+  .fifth {
+    border-right: 0;
+  }
+  .sixth {
+    border-bottom: 1px solid;
   }
 }
