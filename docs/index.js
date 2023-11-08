@@ -54,12 +54,11 @@ window.onload = function () {
       .split(";")
       .some((item) => item.trim().startsWith("wordCount="))
   ) {
-    console.log(document.cookie);
     let deleteData = confirm("Do you want to delete the data from cookies?");
 
     if (deleteData) {
       document.cookie =
-        "wordCount=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+        "wordCount=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
       location.reload();
     } else {
       alert("Cookies are present. Please reload the page.");
