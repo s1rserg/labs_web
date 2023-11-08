@@ -54,6 +54,7 @@ window.onload = function () {
       .split(";")
       .some((item) => item.trim().startsWith("wordCount="))
   ) {
+    console.log(document.cookie);
     let deleteData = confirm("Do you want to delete the data from cookies?");
 
     if (deleteData) {
