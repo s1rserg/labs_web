@@ -72,6 +72,7 @@ window.onload = function () {
 
   if (localStorage.getItem("div3Alignment") != null) {
     div3.style.textAlign = localStorage.getItem("div3Alignment");
+    div3.style.alignItems = "start";
   }
   if (localStorage.getItem("div4Alignment") != null) {
     div4.style.textAlign = localStorage.getItem("div4Alignment");
