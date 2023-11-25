@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lab_3/1</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="first container">
+      <div class="first__text_wrapper">
+        <p class="first__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris
+          pellentesque pulvinar pellentesque habitant morbi tristique senectus.
+          Est ultricies integer quis auctor.
+        </p>
+      </div>
+      <div class="first__header_wrapper">
+        <h1 class="first__header">
+          <a href="index_2.html" style="text-decoration: none">Go to page 2</a>
+        </h1>
+      </div>
+    </header>
+    <div class="wrapper_2_3_4_5_6">
+      <div class="wrapper_2_5">
+        <div class="second container">
+          <p class="second__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="fifth container">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris
+            pellentesque pulvinar pellentesque habitant morbi tristique
+            senectus. Est ultricies integer quis auctor.
+          </p>
+        </div>
+      </div>
+      <div class="wrapper_3_6">
+        <div class="third container">
+          <form id="glitchForm">
+            <label for="text">Text:</label>
+            <input
+              type="text"
+              id="text"
+              name="text"
+              required
+              style="margin-bottom: 10px"
+            />
+            <div class="text-group">
+              <label for="textSize">Text Size, rem:</label>
+              <input
+                type="number"
+                id="textSize"
+                name="textSize"
+                min="1"
+                required
+              />
+
+              <label for="textWeight">Text Weight:</label>
+              <input
+                type="number"
+                id="textWeight"
+                name="textWeight"
+                min="100"
+                max="900"
+                step="100"
+                required
+              />
+            </div>
+
+            <div class="color-group">
+              <label for="textColor">Text Color:</label>
+              <input
+                type="color"
+                id="textColor"
+                name="textColor"
+                value="#000000"
+                required
+              />
+
+              <label for="shadowColors">Shadow Colors:</label>
+              <input
+                type="color"
+                id="shadowColor1"
+                name="shadowColor1"
+                value="#000000"
+                required
+              />
+              <input
+                type="color"
+                id="shadowColor2"
+                name="shadowColor2"
+                value="#000000"
+                required
+              />
+              <input
+                type="color"
+                id="shadowColor3"
+                name="shadowColor3"
+                value="#000000"
+                required
+              />
+            </div>
+
+            <div class="animation-group">
+              <label for="animationTime">Animation Time, ms:</label>
+              <input
+                type="number"
+                id="animationTime1"
+                name="animationTime1"
+                min="1"
+                step="100"
+                required
+              />
+              <input
+                type="number"
+                id="animationTime2"
+                name="animationTime2"
+                min="1"
+                step="100"
+                required
+              />
+              <input
+                type="number"
+                id="animationTime3"
+                name="animationTime3"
+                min="1"
+                step="100"
+                required
+              />
+            </div>
+
+            <div class="offset-group">
+              <label for="offsets">Offsets, em:</label>
+              <input
+                type="number"
+                id="offsetX1"
+                name="offsetX1"
+                required
+                min="-0.05"
+                step="0.01"
+                max="0.05"
+              />
+              <input
+                type="number"
+                id="offsetY1"
+                name="offsetY1"
+                required
+                min="-0.05"
+                max="0.05"
+                step="0.01"
+              />
+              <input
+                type="number"
+                id="offsetX2"
+                name="offsetX2"
+                required
+                min="-0.05"
+                max="0.05"
+                step="0.01"
+              />
+              <input
+                type="number"
+                id="offsetY2"
+                name="offsetY2"
+                required
+                min="-0.05"
+                max="0.05"
+                step="0.01"
+              />
+            </div>
+
+            <button type="button" onclick="submitForm()">
+              Apply Parameters
+            </button>
+          </form>
+          <h1 class="glitch"></h1>
+        </div>
+        <div class="sixth container">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Posuere
+            ac ut consequat semper viverra nam libero justo. Viverra adipiscing
+            at in tellus.
+          </p>
+        </div>
+      </div>
+      <div class="fourth container">
+        <p class="fourth_text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris
+          pellentesque pulvinar pellentesque habitant morbi tristique senectus.
+          Est ultricies integer quis auctor.
+        </p>
+      </div>
+    </div>
+    <footer class="seventh container">
+      <div class="seventh__text_wrapper">
+        <p class="seventh__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Libero
+          nunc consequat interdum varius sit. Quis varius quam quisque id diam
+          vel quam. In pellentesque massa placerat duis.
+        </p>
+      </div>
+      <div class="seventh__header_wrapper">
+        <h2 class="seventh__header">Lorem ipsum dolor sit amet</h2>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
