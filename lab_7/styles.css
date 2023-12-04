@@ -1,0 +1,179 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  border-style: solid;
+  border-width: 1px;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.first {
+  min-height: 25vh;
+  background-color: lightblue;
+  display: flex;
+  border-bottom: 1px solid;
+}
+
+.first__text_wrapper {
+  flex: 3;
+  margin: auto;
+}
+
+.first__header_wrapper {
+  flex: 1;
+  margin: auto;
+  text-align: center;
+}
+
+.wrapper_2_3_4_5_6 {
+  min-height: 60vh;
+  display: flex;
+}
+
+.fourth {
+  flex: 1;
+  background-color: lightcoral;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  border-left: 1px solid;
+}
+
+.wrapper_2_5 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.second {
+  flex: 1;
+  background-color: lightgreen;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid;
+}
+
+.second__text {
+  margin: auto;
+}
+
+.fifth {
+  flex: 5;
+  background-color: lightcoral;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper_3_6 {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid;
+}
+
+.third {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.third ul {
+  list-style-type: none;
+}
+
+.sixth {
+  flex: 1;
+  background-color: lightgreen;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid;
+}
+
+.seventh {
+  min-height: 25vh;
+  background-color: lightblue;
+  display: flex;
+  border-top: 1px solid;
+}
+
+.seventh__text_wrapper {
+  flex: 3;
+  margin: auto;
+}
+
+.seventh__text {
+  padding: 1%;
+}
+
+.seventh__header_wrapper {
+  flex: 1;
+  margin: auto 0;
+}
+
+@media screen and (max-width: 420px) {
+  .wrapper_2_3_4_5_6 {
+    flex-direction: column;
+  }
+  .wrapper_3_6 {
+    border-left: 0;
+  }
+  .third {
+    border-top: solid 1px;
+  }
+  .fourth {
+    border-right: 0;
+    border-left: 0;
+  }
+  .fifth {
+    border-right: 0;
+  }
+  .sixth {
+    border-bottom: 1px solid;
+  }
+}
+
+#work {
+  width: 100%;
+  height: 100%;
+  background-color: lightgray;
+  display: none;
+}
+#anim {
+  position: relative;
+  margin: 0 auto;
+  width: calc(100% - 10px);
+  height: calc(100% - 70px);
+  bottom: 0;
+  border: 5px solid yellow;
+  background: url("art.png") repeat;
+}
+.square {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  transition: transform 0.1s ease-in-out;
+}
+.red {
+  background-color: red;
+}
+.green {
+  background-color: green;
+}
+#controls {
+  width: calc(100% - (Wmax - 10px));
+  padding: 10px;
+  margin: auto;
+}
+
+#play {
+  margin: auto;
+}
